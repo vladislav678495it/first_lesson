@@ -8,11 +8,22 @@ namespace first_lesson
 {
     class Program
     {
+        static void test1(double a,double b, double c)
+        {
+                if(a!=0 && b!=0 && (b*b-4*a*c)>=0)
+                {
+                    Console.WriteLine((((b + (Math.Sqrt(Math.Pow(b, 2) + 4 * a * c))) / 2 * a) - Math.Pow(a, 3) * c + Math.Pow(b, -2)));
+                } else
+            {
+                Console.WriteLine("Error!");
+            }
+            
+        }
 
         static void Main(string[] args)
         {
-            Console.Write("Enter option number:");
-            double f = Convert.ToDouble(Console.ReadLine());
+           /* Console.Write("Enter option number:");
+            int  f = Convert.ToInt32(Console.ReadLine());
             Console.Write("Input a:");
             string a1 = Console.ReadLine();
             a1 = a1.Replace(".", ",");
@@ -29,7 +40,7 @@ namespace first_lesson
             {
                 case 1:
                     Console.Write("Output:");
-                    Console.WriteLine((((b + (Math.Sqrt(Math.Pow(b, 2) + 4 * a * c))) / 2 * a) - Math.Pow(a, 3) * c + Math.Pow(b, -2)));
+                    test1(a,b,c);
                 break;
                 case 2:
                     string d1 = Console.ReadLine();
@@ -55,9 +66,22 @@ namespace first_lesson
                     d2 = d2.Replace(".", ",");
                     double d3 = Convert.ToDouble(d2);
                     Console.Write("Output:");
-                    Console.WriteLine((a*d3+b*c)/a*d3);
-                    break;
+                    Console.WriteLine((a*d3+b*c)/a*d3); 
+                    break;*/
+                double x;
+                    while (true)
+                    {
+                        Console.WriteLine("Enter num:");
+                        string input = Console.ReadLine();
+                        
+                        if (Double.TryParse(input.Replace(".",","), out x))
+                        {
+                            break;
+                        }
+                        Console.Clear();
+                        Console.WriteLine("Error!");
+                    }
+                    Console.WriteLine("Num x="+x);
             }
         }
-}
 }
