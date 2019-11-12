@@ -10,172 +10,191 @@ namespace first_lesson
     {
         static void Main(string[] args)
         {
-            // Lab5(task1)
-            //const int n = 8;
-            //int[] a = new int[n];
-            //for( int i=0; i<n;i++)
-            //{
-            //    Console.WriteLine("A[{0}]=",i);
-            //    a[i] = int.Parse(Console.ReadLine());
-            //}
-            //foreach(int elem in a)
-            //    Console.WriteLine("{0}",elem);
-            //Console.ReadKey();
 
-            // Lab5(task4)
-            //Console.WriteLine("n= ");
-            //int n = int.Parse(Console.ReadLine());
-            //int[] a = new int[n];
+            //Lab6(task1072)
+            //const int n = 16;
+            //Console.WriteLine("n=15 ");
+            //Console.Write("m= ");
+            //int m = int.Parse(Console.ReadLine());
+            //int[,] a = new int[n, m];
+            //int[] b = new int[m];
             //Random r = new Random();
-            //for (int i = 0; i < n; i++)
-            //    a[i] = r.Next(163,191);
-            //foreach (int elem in a)
-            //    Console.WriteLine(" "+ elem);
-            //Console.ReadKey();
-
-            // Lab5(task26)
-            //Console.WriteLine("n= ");
-            //int n = int.Parse(Console.ReadLine());
-            //int[] a = new int[n];
-            //for (int i = 0; i < n; i++)
+            //for (int i = 1; i < n ; i++)
             //{
-            //        Console.WriteLine("A[{0}]=", i);
-            //        a[i] = int.Parse(Console.ReadLine());
-            //}
-            //Console.WriteLine("input k:");
-            //int k = int.Parse(Console.ReadLine());
-            //int b = 0;
-            //foreach (int elem in a)
-            //    if (elem % k == 0)
+            //    for (int j = 0; j < m; j++)
             //    {
-            //     b += elem;
-            //     Console.WriteLine(" " + elem);
+            //        a[i, j] = r.Next(0, 100);
+            //        Console.Write(a[i, j] + " ");
             //    }
-            //Console.WriteLine("sum= "+b);
+            //    Console.WriteLine();
+            //    if (i % 3 == 0)
+            //    {
+            //        for (int j = 0; j < m; j++)
+            //        {
+            //            b[j] = r.Next(0);
+            //            Console.Write(b[j] + " ");
+            //        }
+            //        Console.WriteLine();
+            //    }
+            //}
             //Console.ReadKey();
-
-            // Lab5(task27)
-            //Console.WriteLine("n= ");
+            //Lab6(task1073)
+            //const int m = 21;
+            //Console.Write("n= ");
             //int n = int.Parse(Console.ReadLine());
-            //int[] a = new int[n];
-            //for (int i = 0; i < n; i++)
-            //{
-            //    Console.WriteLine("A[{0}]=", i);
-            //    a[i] = int.Parse(Console.ReadLine());
-
-            //}
-            //for (int i = 0; i < n; i++)
-            //{
-            //    if (a[i] == 0)
-            //    { Console.WriteLine(i); }
-            //}
-
-            // Lab5(task28)
-            // Console.WriteLine("n= ");
-            // int n = int.Parse(Console.ReadLine());
-            // int[] a = new int[n];
-            //for (int i = 0; i < n; i++)
-            //{
-            //    Console.WriteLine("A[{0}]=", i);
-            //    a[i] = int.Parse(Console.ReadLine());
-            //    if (i==(n-1))
-            //    { if (a[0] > 0)
-            //        {
-            //            Console.WriteLine(a[0] + " явл. положительным");
-            //        }
-            //        else
-            //        {
-            //            Console.WriteLine(a[0] + " явл. отрицательным");
-            //        }
-            //    }
-            //}
-
-            // Lab5(task62)
-            /*int sum = 0;
-            Console.WriteLine("n= ");
-            int n = int.Parse(Console.ReadLine());
-            int[] a = new int[n];
-            for (int i = 0; i < n; i++)
-            {
-                Console.WriteLine("A[{0}]=", i);
-                a[i] = int.Parse(Console.ReadLine());
-                if(i%2==0)
-                {
-                    sum += i;
-                }
-            }
-            Console.WriteLine("sum= "+ sum);*/
-
-            // Lab5(task63)
-            //Console.WriteLine("n= ");
-            //const int n = 30;
-            //int[] a = new int[n];
+            //int[,] a = new int[n, m];
+            //int[,] b = new int[n, m];
+            //Console.WriteLine("m= 20 ");
             //Random r = new Random();
             //for (int i = 0; i < n; i++)
             //{
-            //    a[i] = r.Next(100, 300);
-
+            //    for (int j = 1; j < m; j++)
+            //    {
+            //        a[i, j] = r.Next(1,50);
+            //        Console.Write(a[i, j] + "\t");
+            //        if (j % 2 == 0)
+            //        {
+            //            b[i,j] = 10;
+            //            Console.Write(b[i,j] + " ");
+            //        }
+            //    }
+            //    Console.WriteLine();
             //}
-            //foreach (int elem in a)
-            //    Console.WriteLine(" " + elem);
+            //Lab6(task1074(а))
+            //Console.Write("n= ");
+            //int n = int.Parse(Console.ReadLine());
+            //Console.Write("m= ");
+            //int m = int.Parse(Console.ReadLine());
+            //int sum = 0;
+            //int[,] a = new int[n, m];
+            //int[] b = new int[m];
+            //Random r = new Random();
             //for (int i = 0; i < n; i++)
             //{
-            //    if (a[i] > 200)
+            //    for (int j = 0; j < m; j++)
             //    {
-            //        Console.WriteLine("у модели под № " + i + " мощность > 200 л.с." + "\tмощность= "+  a[i]);
+            //        a[i, j] = r.Next(1, 50);
+            //        Console.Write(a[i, j] + "\t");
+            //        sum += a[i, j];
             //    }
-            //}
-            //Console.ReadKey();
-
-            // Lab5(task176) Не получилась
-            //Console.WriteLine("n= ");
-            //int n = int.Parse(Console.ReadLine());
-            //int[] a = new int[n];
-            //int c = 0;
-            //int d = 0;
-            //int f = 0;
-            //for (int i = 0; i < a.Length; i++)
-            //{
-            //    Console.WriteLine("A[{0}]=", i);
-            //    a[i] = int.Parse(Console.ReadLine());
-            //    c = a[1] - a[0];
-            //    int t = a[1] / a[0];
-            //    if (i > 1)
+            //    Console.WriteLine();
+            //    if (sum > 100)
             //    {
-            //        if (i != a.Length)
+            //        for (int j = 0; j < m; j++)
             //        {
-            //            if (a[i + 1] - a[i] == c)
+            //            b[j] = 100;
+            //            Console.Write(b[j] + " ");
+            //        }
+            //    }
+            //    sum = 0;
+            //    Console.WriteLine();
+            //}
+            //Lab6(task1074(б))
+            //Console.Write("n= ");
+            //int n = int.Parse(Console.ReadLine());
+            //Console.Write("m= ");
+            //int m = int.Parse(Console.ReadLine());
+            //int num = -1;
+            //int[,] a = new int[n, m];
+            //int[] b = new int[m];
+            //Random r = new Random();
+            //for (int j = 0; j < m; j++)
+            //{
+            //    for (int i = 0; i < n; i++)
+            //    {
+            //        a[i, j] = r.Next(1, 50);
+            //        Console.WriteLine(a[i, j] + " "); 
+            //        if (a[i, j] % 2 == 0)
+            //        {
+            //            num++;
+            //        }
+            //    }
+            //    Console.WriteLine();
+            //    if (num > -1)
+            //    {
+            //        for (int p = 0; p < n; p++)
+            //        {
+            //            b[p] = -1;
+            //            Console.WriteLine(b[p] + " ");
+            //        }
+            //    }
+            //    Console.WriteLine();
+            //    num = 0;
+            //}
+            //Lab6(task1075)
+            //const int m = 10;
+            //const int n = 26;
+            //int[,] a = new int[n, m];
+            //Random r = new Random();
+            //for (int i = 0; i < n; i++)
+            //{
+            //    for (int j = 0; j < m; j++)
+            //    {
+            //        a[i, j] = r.Next(1, 12);
+            //        Console.Write(a[i, j] + " ");
+            //    }
+            //    Console.WriteLine();
+            //}
+            //Console.WriteLine("Если хотите добавить ученике введите 1: ");
+            //int p = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Укажите номер строки где нужно добавить нового учиника: ");
+            //int f = int.Parse(Console.ReadLine());
+            //if (p == 1)
+            //{
+            //    for (int i = 0; i < n; i++)
+            //    {
+            //        for (int j = 0; j < m; j++)
+            //        {
+            //            if (i != f-1)
             //            {
-            //                d++;
+            //                a[i, j] = r.Next(1, 12);
+            //                Console.Write(a[i, j] + "\t");
             //            }
-            //            else
-            //            {
-            //                Console.WriteLine("Это не арифметическая прогрессия");
-            //                break;
-            //            }
-            //            if(a[i+1] / a[i] == t)
-            //            {
-            //                f++;
-            //            }
-            //            else
-            //            {
-            //                Console.WriteLine("Это не геометрическая прогрессия");
-            //                break;
+            //            else {
+            //                a[i, j] = int.Parse(Console.ReadLine());
+            //                Console.Write(a[i, j] + "\t");
             //            }
             //        }
-                    
+            //        Console.WriteLine();
             //    }
-
             //}
-            //if(d==a.Length-1)
-            //{
-            //    Console.WriteLine("Арифметическая прогрессия");
-            //}
-            //if(f==a.Length-1)
-            //{
-            //    Console.WriteLine("Геометрическая прогрессия");
-            //}
-            //Console.ReadKey();
+            //Lab6(task1076)
+            //    const int m = 5;
+            //    const int n = 3;
+            //    int[,] a = new int[n, m];
+            //    Random r = new Random();
+            //    for (int i = 0; i < n; i++)
+            //    {
+            //        for (int j = 0; j < m; j++)
+            //        {
+            //            a[i, j] = r.Next(1, 12);
+            //            Console.Write(a[i, j] + " ");
+            //        }
+            //        Console.WriteLine();
+            //    }
+            //    Console.WriteLine("Если хотите добавить предмет введите 1: ");
+            //    int p = int.Parse(Console.ReadLine());
+            //    Console.WriteLine("Укажите номер столбца где нужно добавить новый предмет: ");
+            //    int f = int.Parse(Console.ReadLine());
+            //    Console.WriteLine();
+            //    if (p == 1)
+            //    {
+            //        for (int j = 0; j < m; j++)
+            //        {
+            //            for (int i = 0; i < n; i++)
+            //            {
+            //                if (j == f-1)
+            //                {
+            //                    a[i, j] = int.Parse(Console.ReadLine());
+            //                }
+            //                else
+            //                {
+            //                    Console.WriteLine(a[i, j] + "\t"); 
+            //                }
+            //            }
+            //            Console.WriteLine();
+            //        }
+            //    }
         }
     }
 }
